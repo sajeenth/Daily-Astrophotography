@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Daily Astrophotography</title>
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body style="background-color: rgb(209, 207, 207)">
+    <div class="intro">
+      <h1 class="animation-effect" id="animation-effect">
+        Welcome to Daily Astrophotography!
+      </h1>
+    </div>
+
+    <div class="container">
+      <header class="header">Daily Astrophotography</header>
+
+      <h5>
+        <strong>Date Selected: <u id="intro-date"></u></strong>
+      </h5>
+
+      <section>
+        <section>
+          <div
+            class="form-outline datepicker"
+            data-mdb-toggle-button="true"
+            data-mdb-format="yyyy-mm-dd"
+            id="date-picker"
+          >
+            <input type="text" class="form-control" id="wrapper-date" />
+            <label class="form-label">Select a date</label>
+            <button
+              type="button"
+              class="datepicker-toggle-button"
+              data-mdb-toggle="datepicker"
+            >
+              <i class="far fa-calendar"></i>
+            </button>
+          </div>
+        </section>
+
+        <h5 id="picture-author"></h5>
+
+        <div class="picture-type">
+          <section id="wrapper-media"></section>
+
+          <div class="picture-information">
+            <section>
+              <h5 id="picture-author"></h5>
+              <p>Copyright: <span id="wrapper-copyright"></span></p>
+              <p id="wrapper-explanation"></p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Pro-Advanced_3.2.0/js/mdb.min.js"
+    ></script>
+  </body>
+</html>
